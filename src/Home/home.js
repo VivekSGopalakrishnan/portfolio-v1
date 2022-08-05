@@ -1,4 +1,6 @@
 import React,{useEffect} from 'react'
+import {pp1} from '../Assets/pp-1.jpg'
+import {pp2} from '../Assets/pp-2.jpg'
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -19,7 +21,7 @@ const Home = ({theme}) =>{
                 <div class="pic">
                     <div class="image" data-aos="fade-left">
                     { 
-                    theme ==='light'? <img src="pp-1.jpg" class="rounded-circle" alt='pp1' height="270"/>:<img src="pp-2.jpg" class="rounded-circle" alt='pp2' height="270"/> 
+                    theme ==='light'? <img src={pp1} class="rounded-circle" alt='pp1' height="270"/>:<img src={pp2} class="rounded-circle" alt='pp2' height="270"/> 
                     }
                     </div>  
                 </div>

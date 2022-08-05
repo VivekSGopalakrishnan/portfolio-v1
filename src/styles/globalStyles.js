@@ -29,8 +29,14 @@ body{
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   }
+  ul{
+    position: absolute;
+  }
 h1{
   font-size:40px
+}
+h2{
+  32px
 }
 h3{
   font-size: 26px;
@@ -64,12 +70,16 @@ margin-bottom:5px;
 .vertical-timeline-element-content-arrow{
   border-right: 7px solid ${({theme}) => theme.text};
   }
-.vertical-timeline-element--work{
 
+a{
+  color: ${({theme}) => theme.secondary};
+}
+a:hover{
+  color:${({theme}) => theme.text};
 }
 @media screen and (max-width: 768px){
   h3{
-    font-size: 18px;
+    font-size: 22px;
   }
 
 }
@@ -79,6 +89,7 @@ margin-bottom:5px;
   color:${({theme}) => theme.text};
   transition: all .5s ease-in;
 }
+
 
 .navbar a:hover {
   color:${({theme}) => theme.secondary};

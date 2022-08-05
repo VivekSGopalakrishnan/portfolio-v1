@@ -3,6 +3,7 @@ import { FaNodeJs , FaJava , FaHtml5 , FaCss3 , FaJs , FaReact , FaSass , FaBoot
 import { DiMongodb , DiMysql} from "react-icons/di";
 import { SiPostman , SiNextdotjs , SiTypescript , SiAdobephotoshop , SiAdobeillustrator , SiGithub , SiExpress , SiFigma} from "react-icons/si";
 import Aos from "aos";
+
 import "aos/dist/aos.css";
 
 const Skills = () => {
@@ -16,7 +17,6 @@ const Skills = () => {
             <div className="text-center col-12 my-3">
                 <h2>Skills</h2>
             </div>
-            
             <div data-aos="fade-right" className="text-center col-4 col-md-4  mb-3 mb-lg-5"><h3>
                 <FaNodeJs color='3C873A'/><br/>NodeJs
             </h3></div>

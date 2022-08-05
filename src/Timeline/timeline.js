@@ -8,6 +8,13 @@ import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Timeline = () => {
+ 
+  const goToTop = () => {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+      });
+  };
     useEffect(() => {
         Aos.init({ duration : 1500});
     },[]);
@@ -78,9 +85,11 @@ const Timeline = () => {
     </p>
     </div>
   </VerticalTimelineElement>
+  
   <VerticalTimelineElement
     className="vertical-timeline-element--start"
     icon={<BsFillArrowUpCircleFill />}
+    iconOnClick={goToTop}
   >
   </VerticalTimelineElement>
  

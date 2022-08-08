@@ -1,4 +1,6 @@
 import React from "react";
+import logo1 from '../Assets/logo-1.png'
+import logo2 from '../Assets/logo-2.png'
 // import { useState } from "react";
 import {FaMoon} from 'react-icons/fa';
 import {FaSun} from 'react-icons/fa';
@@ -11,6 +13,7 @@ const Navbar = ({theme,toggleTheme}) => {
       <Headroom>
       <nav class="navbar navbar-expand-lg sticky-top pt-4 ">
         <div class="container-fluid">
+
         {/* <div class="navbar-toggler" type="button" close={close} onClick={handleClick} data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <h3><i  className={close ? "fa fa-bars" : "fa fa-close" }></i>
         </h3>
@@ -39,7 +42,12 @@ const Navbar = ({theme,toggleTheme}) => {
           </a>
           </li> 
           </ul> */}
-          
+          <div className="toggle mr-auto text-left" onClick={toggleTheme}>
+          {
+              theme ==='light'? <img src={logo2} alt="logo2"/> : <img src={logo1} alt="logo1"/>
+          }
+      </div>
+
           <div className="toggle ml-auto text-right" onClick={toggleTheme}>
           {
               theme ==='light'? <FaMoon size="40px" />:<FaSun size="40px" />

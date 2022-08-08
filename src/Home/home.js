@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
-import {pp1} from '../Assets/pp-1.jpg'
-import {pp2} from '../Assets/pp-2.jpg'
+import pp1 from '../Assets/pp-1.jpg'
+import pp2 from '../Assets/pp-2.jpg'
 import Aos from "aos";
 import "aos/dist/aos.css";
 

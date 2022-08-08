@@ -89,7 +89,10 @@ a:hover{
   color:${({theme}) => theme.text};
   transition: all .5s ease-in;
 }
+.toggle img{
+  height: 60px;
 
+}
 
 .navbar a:hover {
   color:${({theme}) => theme.secondary};

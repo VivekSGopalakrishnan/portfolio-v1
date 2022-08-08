@@ -16,6 +16,7 @@ function App() {
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
   return (
     <>
+   
     <ThemeProvider theme={themeMode}>
       <Container  >
       <GlobalStyle/>

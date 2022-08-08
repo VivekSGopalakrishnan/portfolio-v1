@@ -1,5 +1,4 @@
 import React from 'react'
-
 const About = () => {
     return (
 <div class="container">
@@ -12,6 +11,7 @@ const About = () => {
                     A frontend developer currently learning ins and outs of web development.
                     Always up for a talk. Looking to collobrate on Projects. Sci-fi enthusiast. 
                     A self learner and trying to learn something new everyday.
+                   
                 </h5> 
             </div>
         </div>

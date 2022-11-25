@@ -9,6 +9,7 @@ import Footer from './Footer/footer';
 import styled,{ThemeProvider} from 'styled-components';
 import { GlobalStyle, lightTheme, darkTheme } from './styles/globalStyles';
 import { useDarkMode } from './styles/useDarkMode';
+import Certifications from './Certifications/Certifications';
 const Container = styled.div`
 `;
 function App() {
@@ -24,6 +25,7 @@ function App() {
       < Home theme={theme}/>
       < About />
       < Skills/>
+      <Certifications/>
       < Timeline theme={theme}/> 
       < Footer />
       </Container>

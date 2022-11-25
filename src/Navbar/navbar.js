@@ -1,4 +1,5 @@
-import React from "react";
+import React , { useEffect } from "react";
+import Aos from "aos";
 import logo1 from '../Assets/logo-1.png'
 import logo2 from '../Assets/logo-2.png'
 // import { useState } from "react";
@@ -6,6 +7,9 @@ import {FaMoon} from 'react-icons/fa';
 import {FaSun} from 'react-icons/fa';
 import Headroom from "react-headroom";
 const Navbar = ({theme,toggleTheme}) => {
+  useEffect(() => {
+    Aos.init({ duration : 2000});
+},[]);
   // console.log(theme);
   // const [close, setClose] = useState(true);
   // const handleClick = () => setClose(!close)
@@ -42,13 +46,13 @@ const Navbar = ({theme,toggleTheme}) => {
           </a>
           </li> 
           </ul> */}
-          <div className="toggle mr-auto text-left" onClick={toggleTheme}>
+          <div className="toggle mr-auto text-left"  data-aos="fade-in">
           {
               theme ==='light'? <img src={logo2} alt="logo2"/> : <img src={logo1} alt="logo1"/>
           }
       </div>
 
-          <div className="toggle ml-auto text-right" onClick={toggleTheme}>
+          <div className="toggle ml-auto text-right" onClick={toggleTheme} data-aos="fade-in">
           {
               theme ==='light'? <FaMoon size="40px" />:<FaSun size="40px" />
           }

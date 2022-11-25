@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"; 
+import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 ::-webkit-scrollbar {
@@ -11,27 +11,17 @@ export const GlobalStyle = createGlobalStyle`
 }
  
 ::-webkit-scrollbar-thumb {
-  background: ${({theme}) => theme.text}; 
+  background: ${({ theme }) => theme.text}; 
   border-radius: 10px;
 }
 
 
 body{
-    background: ${({theme}) => theme.body};
-    color:${({theme}) => theme.text};
+    background: ${({ theme }) => theme.body};
+    color:${({ theme }) => theme.text};
     transition: all .5s ease-in;
     
 }
-.footer{
-  border-top: 1px solid;
-}
-.navbar{
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  }
-  ul{
-    position: absolute;
-  }
 h1{
   font-size:40px
 }
@@ -41,42 +31,67 @@ h2{
 h3{
   font-size: 26px;
 }
+
+// NAVBAR
+
+
+.navbar{
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  }
+ul{
+  position: absolute;
+  }
+
+
+//SKILLS
+
+
 .skills{
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.footer{
-  overflow: hidden;
-  }
-  .vertical-timeline::before {
-  background: ${({theme}) => theme.text};
-  }
+.vertical-timeline::before {
+  background: ${({ theme }) => theme.text};
+}
 .vertical-timeline-element-title{
 color: red;
 margin-bottom:5px;
   }
 .vertical-timeline-element-content{
-  background: ${({theme}) => theme.text};
+  background: ${({ theme }) => theme.text};
   opacity:92%;
-  color:${({theme}) => theme.body};
+  color:${({ theme }) => theme.body};
   }
 .vertical-timeline-element-icon{
-  background: ${({theme}) => theme.body};
+  background: ${({ theme }) => theme.body};
   z-index:1;
-  color:${({theme}) => theme.text};
-  box-shadow: 0 0 0 4px  ${({theme}) => theme.text}, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  color:${({ theme }) => theme.text};
+  box-shadow: 0 0 0 4px  ${({ theme }) => theme.text}, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
 
 .vertical-timeline-element-content-arrow{
-  border-right: 7px solid ${({theme}) => theme.text};
+  border-right: 7px solid ${({ theme }) => theme.text};
   }
 
+//FOOTER
+
+
+.footer{
+  overflow: hidden;
+  border-top: 1px solid;
+  }
 a{
-  color: ${({theme}) => theme.secondary};
+  color: ${({ theme }) => theme.secondary};
 }
 a:hover{
-  color:${({theme}) => theme.text};
+  color:${({ theme }) => theme.text};
 }
+
+
+// SMALL SCREENS
+
+
 @media screen and (max-width: 768px){
   h3{
     font-size: 22px;
@@ -86,7 +101,7 @@ a:hover{
 .navbar a{
   
   text-decoration: none;
-  color:${({theme}) => theme.text};
+  color:${({ theme }) => theme.text};
   transition: all .5s ease-in;
 }
 .toggle img{
@@ -95,12 +110,12 @@ a:hover{
 }
 
 .navbar a:hover {
-  color:${({theme}) => theme.secondary};
+  color:${({ theme }) => theme.secondary};
   }
   
 
 .card{
-  background: ${({theme}) => theme.primary};
+  background: ${({ theme }) => theme.primary};
 }
 .nav-links{
   text-decoration: none;
@@ -108,14 +123,14 @@ a:hover{
 }
 `
 export const lightTheme = {
-    body:'#F7F7F7',
-    text:'#121212',
-    primary:'#C0C0C0',
-    secondary:'#424242'
+  body: '#F7F7F7',
+  text: '#121212',
+  primary: '#C0C0C0',
+  secondary: '#424242'
 };
 export const darkTheme = {
-    body:'#121212',
-    text:'#F7F7F7', 
-    primary:'#424242',
-    secondary:'#C0C0C0'
+  body: '#121212',
+  text: '#F7F7F7',
+  primary: '#424242',
+  secondary: '#C0C0C0'
 };
